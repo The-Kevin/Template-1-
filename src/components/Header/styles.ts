@@ -12,7 +12,12 @@ export const Container = styled.div`
     position: fixed; /*this */
     flex-direction: row;
     justify-content: space-between;
-   
+    align-content: center;
+    z-index: 2;
+
+    @media (min-width: 1140px){
+        height: 70;
+    }
     
     background: ${props => props.theme.corHeader};
     color: ${props => props.theme.corFundo};
@@ -20,24 +25,41 @@ export const Container = styled.div`
     >header {
         font-size: 40px;
         margin-left: 15px;
+
     }
     
 `;
+export const Login = styled.div`
 
-export const Button = styled.button`
-    background: ${props => props.theme.corLateral};
-    color: white;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    border: none;
-    border-radius: 12px;
+    
 
-    margin-top: 10px;
-    margin-right: 30px;
-    padding: 15px;
-    height: 15px;
-    position: relative;
-   
+    >img{
+        background: ${props => props.theme.corFundo};
+        border-radius: 10px;
+        height: 45px;
+    }
+
+    >button {
+        margin-left: 10px;
+        margin-right: 20px;
+        padding: 60;
+        height: 30px;
+        width: 60px;
+
+        border-radius: 10px;
+        border: 1px solid #111E6C;
+        background: #ffff;
+
+        transition: 0.3s;
+
+        :hover{
+        color: white;
+        background: #111E6C;
+        transition: 0.3s;
+        }
+    }
+    
 `;

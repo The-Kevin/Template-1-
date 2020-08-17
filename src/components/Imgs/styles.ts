@@ -6,9 +6,12 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
 
+    padding-top: 10vw;
+
     > img{
         height: 30vw;
         width: 40vw;
+        padding-top: 5vw;
     }
     @media (min-width: 1024px){
         > img{
