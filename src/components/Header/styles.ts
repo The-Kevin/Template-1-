@@ -57,8 +57,9 @@ export const Login = styled.div`
 
         :hover{
         color: white;
-        background: #111E6C;
+        background: #F20505;
         transition: 0.3s;
+        border: none;
         }
     }
     

@@ -1,13 +1,10 @@
 import React from 'react';
 import GlobalStyles from './styles/globalStyles';
 
-import data from './data';
 
 import Header from './components/Header';
-import Section from './components/Section';
-import Img from './components/Imgs';
 import Menu from './components/Nav/Menu';
-import Footer from './components/Footer';
+import Routes from './Routes';
 
 import { ThemeProvider } from 'styled-components';
 
@@ -25,20 +22,7 @@ function App() {
     <ThemeProvider theme={cores}>
       <Header />
       <Menu />
-
-        <Img />
-
-        <Section 
-          title={data[0].title}
-          text={data[0].text}
-        />
-        <Img />
-        <Section 
-          title={data[1].title}
-          text={data[1].text}
-        />
-        <Footer />
-        
+      <Routes />
       <GlobalStyles />
     </ThemeProvider>
    
