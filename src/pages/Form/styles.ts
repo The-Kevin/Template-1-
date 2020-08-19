@@ -42,6 +42,7 @@ export const Content = styled.div`
             background: ${props => props.theme.corHeader};
 
             transition: 0.2s;
+            box-shadow: 1px 1px 2px;
 
             :hover{
                 color: black;
@@ -51,6 +52,7 @@ export const Content = styled.div`
             }
         }
         >input{
+            margin: 30px;
             height: 25px;
             border-radius: 5px;
             font: Arial;

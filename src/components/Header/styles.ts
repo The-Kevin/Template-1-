@@ -14,6 +14,7 @@ export const Container = styled.div`
     justify-content: space-between;
     align-content: center;
     z-index: 2;
+    box-shadow: 2px 2px 10px black;
 
     @media (min-width: 1140px){
         height: 70;
@@ -34,7 +35,7 @@ export const Login = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 
     >img{
         background: ${props => props.theme.corFundo};

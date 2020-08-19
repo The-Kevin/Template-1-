@@ -10,10 +10,9 @@ import { ThemeProvider } from 'styled-components';
 
 
 const cores = {
-    corHeader: '#0B1726',
-    corLateral: '#111E6C',
-    corFundo: '#F5F5F5',
-    corFraca: '#ADD8E6'
+    corHeader: '#0D0D0D',
+    corLateral: '#262526',
+    corFundo: '#D9D9D9'
 }
 
 function App() {

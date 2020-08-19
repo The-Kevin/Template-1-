@@ -12,11 +12,12 @@ export const Container = styled.div`
         height: 30vw;
         width: 40vw;
         padding-top: 5vw;
-    }
-    @media (min-width: 1024px){
-        > img{
-        height: 20vw;
-        width: 30vw;
-      }
+
+        @media (min-width: 1024px){
+            height: 20vw;
+            width: 20vw;
+      
+        }
+   
     }
 `;
