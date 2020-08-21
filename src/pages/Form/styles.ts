@@ -1,94 +1,113 @@
 import styled from 'styled-components';
 
-export const Content = styled.div`
-
-
+export const Container = styled.div`
+    
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
-    flex-flow: row wrap;
 
     position: relative;
-    top: 150px;
+    top: 100px;
 
+    >button{
+        font-size: 20px;
+        padding: 10px;
+        width: 200px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+
+        background: ${props => props.theme.corHeader};
+        color: white;
+
+        :hover{
+           
+        }
+    }
+`;
+
+
+export const Titulo = styled.form`
+    font-size: 30px;
+
+    >label{
+        padding: 5px;
+
+    }
+
+    >input {
+        padding: 5px;
+        width: 50vw;
+        margin-bottom: 50px;
+    }
 
     @media (min-width: 1040px){
-        top: 100px;
+        >input{
+            width: 25vw;
+        }
     }
 
-    >form{
-        display: flex;
-        flex-direction: column;
-    
-        font-size: 40px;
+`;
+
+export const Resumo = styled.form`
+     display: flex;
+     flex-direction: column;
+     font-size: 20px;
+
+        >label{
+            padding: 5px;
+        }
+
+        >input {
+            padding: 5px;
+            width: 50vw;
+            margin-bottom: 50px;
+        }
 
         @media (min-width: 1040px){
-            font-size: 2vw;
-            justify-content: center;
-            align-items: center;
-
-            >input{
-                width: 500px;
-            }
-        }
-       
-        >label{
-            align-self: center;
-            border-radius: 5px;
-            padding: 5px;
-
-            color: white;
-            background: ${props => props.theme.corHeader};
-
-            transition: 0.2s;
-            box-shadow: 1px 1px 2px;
-
-            :hover{
-                color: black;
-                background: ${props => props.theme.corFundo};
-                
-                transition: 0.2s;
-            }
-        }
         >input{
-            margin: 30px;
-            height: 25px;
-            border-radius: 5px;
-            font: Arial;
-            text-align: center;
-            font-size: 20px;
+            width: 25vw;
         }
+    }
+`;
 
-        >textarea{
-           border: 1px solid;
-           border-radius: 15px;
-           font-size: 20px;
-           -moz-border-radius:20px;
-            -webkit-border-radius:4px;
-            box-shadow: 1px 1px 2px;    
-            -moz-box-shadow: 1px 1px 2px;
-            -webkit-box-shadow: 1px 1px 2px;
-        }
+export const Texto = styled.form`
+    display: flex;
+    flex-direction: column;
 
-        >button{
-            height: 40px;
-            width: 150px;
-            align-self: center;
-            margin-bottom: 20px;
+    font-size: 30px;
+    width: 100vw;
 
-            border-radius: 10px;
-            transition: 0.2s;
-
-
-            :hover{
-                color: white;
-                background: ${props => props.theme.corHeader};
-                transition: 0.2s;
-            }
-        }
-    
-
+    >label{
+        margin-left: 20px;
     }
 
+    >textarea{
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+
+    @media (min-width: 1040px){
+        justify-content: center; 
+        align-items: center;
+        >textarea{
+            width: 50vw;
+        }
+    }
+`;
+
+export const Autor = styled.form`
+    display: flex;
+    flex-direction: column;
+
+    font-size: 25px;
+
+    >input{
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+
+    @media (min-width: 1040px){
+        width: 300px;
+    }
 `;

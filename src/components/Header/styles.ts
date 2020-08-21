@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 
+import {FilePerson} from '@styled-icons/bootstrap/FilePerson';
 
 export const Container = styled.div`
 
@@ -9,7 +10,7 @@ export const Container = styled.div`
     width: 100%;
     font-weight: bold;
     display: flex;
-    position: fixed; /*this */
+    position: fixed;
     flex-direction: row;
     justify-content: space-between;
     align-content: center;
@@ -23,11 +24,10 @@ export const Container = styled.div`
     background: ${props => props.theme.corHeader};
     color: ${props => props.theme.corFundo};
     
-    >header {
-        font-size: 40px;
-        margin-left: 15px;
-
+    >div{
+        display: flex;
     }
+  
     
 `;
 export const Login = styled.div`
@@ -35,13 +35,6 @@ export const Login = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-
-
-    >img{
-        background: ${props => props.theme.corFundo};
-        border-radius: 10px;
-        height: 45px;
-    }
 
     >button {
         margin-left: 10px;
@@ -63,5 +56,20 @@ export const Login = styled.div`
         border: none;
         }
     }
+`;
+
+export const Heade = styled.div`
+
+    align-self: center;
+
+    margin-left: 10px;
+    font-size: 35px;
+`;
+
+export const Icon = styled(FilePerson)`
+
+    align-self: center;
     
+    height: 40px;
+    width: 40px;
 `;

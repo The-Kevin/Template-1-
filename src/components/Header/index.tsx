@@ -1,19 +1,21 @@
 import React from 'react';
 
-import { Container, Login} from './styles';
+import { Container, Heade, Login, Icon } from './styles';
 
-import img from '../../images/icons8-name-50.png';
+
 
 const Header = () => {
     let login = false;
 
     return (
        <Container>
-           <header>Logo</header>
-           <Login>
-                <img src={img} alt="user-icon"/>
-                <button id="botao">{login ? 'usuario' : 'login'}</button>
-            </Login>
+            <Heade>Logo</Heade>
+            <div>
+                <Icon />
+                <Login>
+                    <button id="botao">{login ? 'usuario' : 'login'}</button>
+                </Login>
+            </div>
        </Container> 
        
     ); 
